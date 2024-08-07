@@ -5,8 +5,8 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
-      color: Color(0xFF2F70AF),
+      padding: const EdgeInsets.all(10),
+      color: const Color(0xFF2F70AF),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -16,14 +16,14 @@ class Header extends StatelessWidget {
           Text(
             'Mista Worldwide',
             style: GoogleFonts.firaSans(
-              textStyle: TextStyle(
+              textStyle: const TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
               width: 50), //bout de code a l'arrache pour le spacing lol mdr
         ],
       ),
