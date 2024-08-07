@@ -40,15 +40,15 @@ class ActivityListPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final activities = [
-      ActivityCard(
-        imageUrl: 'https://via.placeholder.com/200',
+      const ActivityCard(
+        imageAsset: 'images/louvre.jpg',
         name: 'Visite du Louvre',
         location: 'Paris, France',
         description: 'Découvrez les merveilles du Louvre.',
         price: '20€',
       ),
-      ActivityCard(
-        imageUrl: 'https://via.placeholder.com/200',
+      const ActivityCard(
+        imageAsset: 'images/eiffel.jpg',
         name: 'Tour Eiffel',
         location: 'Paris, France',
         description: 'Montez au sommet de la Tour Eiffel.',
@@ -69,7 +69,7 @@ class ActivityListPage extends StatelessWidget {
 class AccountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text('Mon Compte'),
     );
   }
@@ -78,7 +78,7 @@ class AccountPage extends StatelessWidget {
 class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text('Paramètres'),
     );
   }

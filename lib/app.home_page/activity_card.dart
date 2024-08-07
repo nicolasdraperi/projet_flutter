@@ -1,78 +1,76 @@
 import 'package:flutter/material.dart';
 
 class ActivityCard extends StatelessWidget {
-  final String imageUrl;
-  final String name;
-  final String location;
-  final String description;
-  final String price;
-
   const ActivityCard({
-    required this.imageUrl,
+    super.key,
+    required this.imageAsset,
     required this.name,
     required this.location,
     required this.description,
     required this.price,
   });
+  final String imageAsset;
+  final String name;
+  final String location;
+  final String description;
+  final String price;
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: EdgeInsets.symmetric(vertical: 8),
-      color: Color(0xFF2F70AF), // Background color of the card
+      margin: const EdgeInsets.symmetric(vertical: 8),
+      color: const Color(0xFF2F70AF),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(
-              imageUrl,
-              width: double.infinity,
+            Image.asset(
+              imageAsset,
+              width: 200,
               height: 200,
               fit: BoxFit.cover,
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               name,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 18,
-                color: Color(0xFF806491), // Primary color
+                color: Color(0xFF806491),
               ),
             ),
             Text(
               location,
-              style: TextStyle(
-                color: Color(0xFFB9848C), // Secondary color
+              style: const TextStyle(
+                color: Color(0xFFB9848C),
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               description,
-              style: TextStyle(
-                color: Color(0xFF806491), // Primary color
+              style: const TextStyle(
+                color: Color(0xFF806491),
               ),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   price,
-                  style: TextStyle(
-                    color: Color(0xFFB9848C), // Secondary color
+                  style: const TextStyle(
+                    color: Color(0xFFB9848C),
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {
-                    // Action pour le bouton de réservation
-                  },
+                  onPressed: () {},
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color(0xFF806491), // Button color
+                    backgroundColor: const Color(0xFF806491), // Button color
                   ),
-                  child: Text('Réserver'),
+                  child: const Text('Réserver'),
                 ),
               ],
             ),
