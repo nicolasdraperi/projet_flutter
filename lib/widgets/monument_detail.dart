@@ -47,7 +47,7 @@ class MonumentDetail extends StatelessWidget {
             Container(
               height: 200,
               color: Colors.grey[300],
-              child: const Center(child: Text('gougar map')),
+              child: const Center(child: Text('google map')),
             ),
             const SizedBox(height: 16),
             Text(
