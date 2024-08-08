@@ -10,11 +10,9 @@ class Header extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.network(
-              'https://s.yimg.com/ny/api/res/1.2/SfgsPpifZvFfwCpj8RAo0Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MA--/https://media.zenfs.com/en-US/theblast_73/ecec447fa62058fdda0557dd74445c54',
-              height: 50),
+          Image.asset('images/eiffel.png', height: 300),
           Text(
-            'Mista Worldwide',
+            'Parisplore',
             style: GoogleFonts.firaSans(
               textStyle: const TextStyle(
                 fontSize: 24,
