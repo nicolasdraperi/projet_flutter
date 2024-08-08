@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'widgets/header.dart';
 import 'widgets/monument_card.dart';
-import 'monuments/tour_eiffel.dart';
+import 'monuments/monument_data.dart';
 
 void main() {
   runApp(TourismApp());
@@ -29,6 +29,7 @@ class TourismApp extends StatelessWidget {
 class HomePage extends StatelessWidget {
   final List<Map<String, dynamic>> monuments = [
     TourEiffel.data,
+    Louvre.data,
   ];
 
   @override
