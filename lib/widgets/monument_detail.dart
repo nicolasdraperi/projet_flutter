@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'user_review.dart';
+import 'package:projet_flutter/widgets/custom_bottom_navigation_bar.dart';
 
 class MonumentDetail extends StatelessWidget {
   final Map<String, dynamic> monument;
+  final int _currentIndex = 0;
 
   MonumentDetail(this.monument);
+
+  void _onTabTapped(int index) {}
 
   @override
   Widget build(BuildContext context) {
@@ -28,11 +32,10 @@ class MonumentDetail extends StatelessWidget {
               Container(
                 constraints: BoxConstraints(
                   maxWidth: screenWidth,
-                  maxHeight: screenWidth *
-                      0.6, //60%
+                  maxHeight: screenWidth * 0.6, //60%
                 ),
                 child: FittedBox(
-                  fit: BoxFit.cover, 
+                  fit: BoxFit.cover,
                   child: Image.network(
                     monument['image'],
                     width: screenWidth,
@@ -110,6 +113,10 @@ class MonumentDetail extends StatelessWidget {
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: CustomBottomNavigationBar(
+        currentIndex: _currentIndex,
+        onTap: _onTabTapped,
       ),
     );
   }
