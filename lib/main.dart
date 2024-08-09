@@ -25,8 +25,6 @@ class TourismApp extends StatelessWidget {
   }
 }
 
-//Importer les monuments en haut du code, et dans la classe Homepage ci-dessous avec la méthode "lorem.data,"
-
 class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
@@ -49,6 +47,10 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    // Get the screen height
+    final screenHeight = MediaQuery.of(context).size.height;
+    final cardHeight = screenHeight * 0.2; // 20% of the screen height
+
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(100),
@@ -56,7 +58,9 @@ class _HomePageState extends State<HomePage> {
       ),
       body: ListView(
         padding: const EdgeInsets.all(10),
-        children: monuments.map((monument) => MonumentCard(monument)).toList(),
+        children: monuments
+            .map((monument) => MonumentCard(monument, cardHeight))
+            .toList(),
       ),
       bottomNavigationBar: CustomBottomNavigationBar(
         currentIndex: _currentIndex,

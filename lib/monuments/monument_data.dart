@@ -29,3 +29,4 @@ class Seine {
 }
 // le saviez vous? les mini tours eiffel vendues en souvenir sont l'un des souvenirs les plus volés
 // le saviez vous? Jojo's Bizarre Adventure a fait une collab avec le louvre  
+// le saviez vous? moi non plus. c'est fou hein.
