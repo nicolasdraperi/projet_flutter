@@ -27,5 +27,5 @@ class Seine {
     'description': "la hantise des nageurs olympiques ",
   };
 }
-// le saviez vous? les mini tours eiffel vendues en souvenir sont l'un des corps étrangers les plus extraits du corps humain aux urgences 
+// le saviez vous? les mini tours eiffel vendues en souvenir sont l'un des souvenirs les plus volés
 // le saviez vous? Jojo's Bizarre Adventure a fait une collab avec le louvre  
