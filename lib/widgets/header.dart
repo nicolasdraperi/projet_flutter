@@ -21,8 +21,7 @@ class Header extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(
-              width: 50), //bout de code a l'arrache pour le spacing lol mdr
+          const SizedBox(width: 50),
         ],
       ),
     );

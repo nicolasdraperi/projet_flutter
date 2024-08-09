@@ -30,15 +30,14 @@ class MonumentDetail extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                constraints: BoxConstraints(
-                  maxWidth: screenWidth,
-                  maxHeight: screenWidth * 0.6, //60%
-                ),
+                width: screenWidth,
+                height: 200,
                 child: FittedBox(
                   fit: BoxFit.cover,
                   child: Image.network(
                     monument['image'],
                     width: screenWidth,
+                    height: 200,
                   ),
                 ),
               ),
@@ -83,17 +82,17 @@ class MonumentDetail extends StatelessWidget {
               // samples de revues utilisateurs
               UserReview(
                 profileImageUrl: 'https://example.com/profile1.jpg',
-                userName: 'Gilbert Montagné',
+                userName: 'Jean Muller',
                 rating: 4.5,
                 reviewText:
                     'la tour eiffel, waouh! le vue est à couper le souffle.',
               ),
               UserReview(
                 profileImageUrl: 'https://example.com/profile2.jpg',
-                userName: 'vicky timm',
+                userName: 'Victor Lepeureu',
                 rating: 2.0,
                 reviewText:
-                    "c'était sympa mais on m'a fait les poches. beaucoup de pickpockets",
+                    "c'était sympa mais il y avait beaucoup trop de monde",
               ),
               const SizedBox(height: 16),
               Center(
@@ -106,7 +105,10 @@ class MonumentDetail extends StatelessWidget {
                   ),
                   child: Text(
                     "Je laisse mon avis!",
-                    style: GoogleFonts.numans(fontSize: 16),
+                    style: GoogleFonts.numans(
+                      fontSize: 16,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
