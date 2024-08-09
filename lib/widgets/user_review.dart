@@ -17,8 +17,8 @@ class UserReview extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 8.0),
-      padding: EdgeInsets.all(8.0),
+      margin: const EdgeInsets.symmetric(vertical: 8.0),
+      padding: const EdgeInsets.all(8.0),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
@@ -27,7 +27,7 @@ class UserReview extends StatelessWidget {
             color: Colors.grey.withOpacity(0.3),
             spreadRadius: 2,
             blurRadius: 5,
-            offset: Offset(0, 3),
+            offset: const Offset(0, 3),
           ),
         ],
       ),
@@ -43,10 +43,10 @@ class UserReview extends StatelessWidget {
                     backgroundImage: NetworkImage(profileImageUrl),
                     radius: 20,
                   ),
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Text(
                     userName,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
@@ -55,7 +55,7 @@ class UserReview extends StatelessWidget {
               ),
               RatingBarIndicator(
                 rating: rating,
-                itemBuilder: (context, index) => Icon(
+                itemBuilder: (context, index) => const Icon(
                   Icons.star,
                   color: Colors.amber,
                 ),
@@ -65,10 +65,10 @@ class UserReview extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Text(
             reviewText,
-            style: TextStyle(fontSize: 14),
+            style: const TextStyle(fontSize: 14),
           ),
         ],
       ),

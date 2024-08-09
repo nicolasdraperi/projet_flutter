@@ -35,6 +35,9 @@ class _HomePageState extends State<HomePage> {
     TourEiffel.data,
     Louvre.data,
     Seine.data,
+    Seine.data,
+    Seine.data,
+    Seine.data,
   ];
 
   int _currentIndex = 0;
@@ -47,9 +50,8 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    // Get the screen height
     final screenHeight = MediaQuery.of(context).size.height;
-    final cardHeight = screenHeight * 0.2; // 20% of the screen height
+    final cardHeight = screenHeight * 0.2;
 
     return Scaffold(
       appBar: PreferredSize(

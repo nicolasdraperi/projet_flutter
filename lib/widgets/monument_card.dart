@@ -17,8 +17,7 @@ class MonumentCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
         ),
         margin: const EdgeInsets.symmetric(vertical: 10),
-        color:
-            const Color(0xFF806491), //ptn flutter prends pas le héxadécimal???
+        color: const Color(0xFF806491),
         child: InkWell(
           onTap: () {
             Navigator.push(
@@ -54,8 +53,7 @@ class MonumentCard extends StatelessWidget {
                         textStyle: const TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
-                          color: Colors
-                              .white, // CHANGER LA COULEUR DU TEXTE SI ON CHANGE LE BACKGROUND!
+                          color: Colors.white,
                         ),
                       ),
                     ),
@@ -65,7 +63,7 @@ class MonumentCard extends StatelessWidget {
                       style: GoogleFonts.numans(
                         textStyle: const TextStyle(
                           fontSize: 16,
-                          color: Colors.white, // CHANGER LE TEXT ICI AUSSI!
+                          color: Colors.white,
                         ),
                       ),
                     ),
