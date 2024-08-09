@@ -36,6 +36,7 @@ class _HomePageState extends State<HomePage> {
   final List<Map<String, dynamic>> monuments = [
     TourEiffel.data,
     Louvre.data,
+    Seine.data,
   ];
 
   int _currentIndex = 0;
